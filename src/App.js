@@ -9,12 +9,22 @@ function App() {
     { text: 'Finish the course!', id: 'g2' },
   ]);
 
+  const deleteItemHandler = (goalId) => {
+    setCourseGoals((prevGoals) => {
+      const updatedGoals = prevGoals.filter((goal) => goal.id !== goalId);
+
+      return updatedGoals;
+    });
+  };
+
   let content = (
     <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
   );
 
   if (courseGoals.length > 0) {
-    content = <CourseGoalList items={courseGoals} />;
+    content = (
+      <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} />
+    );
   }
 
   return (
