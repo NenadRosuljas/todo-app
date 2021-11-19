@@ -9,7 +9,7 @@ const CourseInput = () => {
         <label>Course Goal</label>
         <input type='text' />
       </div>
-      <Button type='submit'>Add goal</Button>
+      <Button type='submit'>Add Goal</Button>
     </form>
   );
 };
