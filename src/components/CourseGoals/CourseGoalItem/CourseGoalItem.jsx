@@ -1,7 +1,8 @@
 import React from 'react';
+import './CourseGoalItem.css';
 
 const CourseGoalItem = (props) => {
-  return <li>{props.children}</li>;
+  return <li className='goal-item'>{props.children}</li>;
 };
 
 export default CourseGoalItem;
