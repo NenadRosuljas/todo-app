@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './../../UI/Button/Button';
 import './CourseInput.css';
 
 const CourseInput = () => {
@@ -8,7 +9,7 @@ const CourseInput = () => {
         <label>Course Goal</label>
         <input type='text' />
       </div>
-      <button type='submit'>Add goal</button>
+      <Button type='submit'>Add goal</Button>
     </form>
   );
 };
